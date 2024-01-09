@@ -2,6 +2,7 @@
 
 package codefinity;
 
+
 public class Main {
     public static void main(String[] args) {
         SinglyLinkedList linkedList = new SinglyLinkedList();
@@ -24,6 +25,10 @@ public class Main {
         // Deleting an element by index (Delete)
         linkedList.delete(1);
         System.out.println("List after deleting the element at index 1:");
+        linkedList.display();
+
+        linkedList.delete(0);
+        System.out.println("List after deleting the element at index 0:");
         linkedList.display();
     }
 }
